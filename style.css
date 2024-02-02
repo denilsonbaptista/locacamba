@@ -107,3 +107,29 @@ footer {
 
   padding: 20px;
 }
+
+@media (min-width: 700px) {
+  body {
+    padding: 8rem;
+  }
+
+  main {
+    max-width: 1021px;
+    display: flex;
+    gap: 10rem;
+  }
+
+  /* O símbolo ">" é um seletor de filho direto em CSS. Quando usado em um seletor, indica que o elemento selecionado é um filho direto do elemento anterior mencionado.
+  
+  No código CSS que você forneceu, "main > div" é um seletor que seleciona todos os elementos "div" que são filhos diretos de um elemento "main" em uma página web
+  👇🏻 */
+  main > div {
+    max-width: 484px;
+  }
+
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+}
