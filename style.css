@@ -108,15 +108,26 @@ footer {
   padding: 20px;
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   body {
     padding: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
   }
 
   main {
-    max-width: 1021px;
+    width: min(326px, 90%);
     display: flex;
-    gap: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  main section {
+    width: 356px;
   }
 
   /* O símbolo ">" é um seletor de filho direto em CSS. Quando usado em um seletor, indica que o elemento selecionado é um filho direto do elemento anterior mencionado.
@@ -131,5 +142,10 @@ footer {
     gap: 5.3rem;
     max-width: 450px;
     align-items: center;
+  }
+
+  footer {
+    display: none;
+    opacity: 1;
   }
 }
